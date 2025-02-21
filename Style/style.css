@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital@1&display=swap');
+
+:root {
+    ---cor1:#415D43;
+    ---cor2:#111D13;
+    ---cor3:#8FB996;
+    ---cor4:#A1CCA5;
+    ---cor5:#709775;
+
+    ---fonte1: "Lexend Peta", serif;
+    ---fonte2: "Exo", serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(---cor1);
+    color: var(---cor2);
+}
+
+.Texto-destaque {
+    color: var(---cor3)
+}
+
+strong {
+    color: var(---cor2);
+}
+
+p {
+color: var(---cor2);
+}
+
+a { 
+ color: var(---cor4);
+}
+
+.cabecalho {
+    padding: 0% 0% 0% 16%;
+    display: flex;
+    background-color: var(---cor2);
+}
+
+.cabecalho2{
+    display: flex;
+    gap: 40px ;
+}
+
+.cabecalho3 {
+    font-family: var(---fonte2);
+    font-size: 1,125rem;
+    font-weight: 650px;
+    color: var(---cor3);
+    padding: 1cap;
+    text-decoration: none;
+}
+
+.apresentacao {
+    padding: 3% 14%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+    
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.tamanho {
+    font-size: 2.25rem;
+    font-family: var(---fonte1);
+    color: var(---cor2);
+}
+
+.tamanho2 {
+    font-size: 1,375rem;
+    font-family: var(---fonte2);
+    color: var(---cor2);
+}
+
+.tamanho3 {
+    margin: 1%;
+    display: flex;
+    justify-content: center;
+    font-size: 1,375rem;
+    font-family: var(---fonte1);
+    color: var(---cor2);
+}
+
+.tamanho4 {
+    font-size: 1,25rem;
+    font-family:var(---fonte2);
+    color: var(---cor2);
+    text-decoration: none;
+}
+
+.tamanho5 {
+    font-size: 1,25rem;
+    font-family: var(---fonte2);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: var(---cor2);
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    border: 3px solid var(---cor5);
+    width: 50%;
+    text-align: center;
+    border-radius: 16px;
+    font-size: 1,375rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(---cor3);
+    font-family: var(---fonte1);
+}
+
+.links :hover {
+    background-color: var(---cor2) ;
+}
+
+.rodape {
+    font-family: var(---fonte2);
+    padding: 12px;
+    color: var(---cor2);
+    background-color: var(---cor5);
+    font-size: 1,375rem;
+    text-align: center;
+}
+
+.img {
+    width: 45%;
+}
+
+@media(max-width: 920px) {
+    .apresentacao{
+        flex-direction: column;
+        padding: 7%;
+    }
+    
+    .apresentacao__conteudo {
+        width: auto;
+    }
+
+    .cabecalho {
+        padding: 0% 0% 0% 12%;
+    }
+    .cabecalho3{
+        justify-content: space-around;
+    }
+}
